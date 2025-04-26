@@ -19,7 +19,7 @@ async def test_funcaoteste():
 
 @pytest.mark.asyncio
 async def test_create_estudante():
-    estudante_teste = Estudante(nome="Fulano", curso="curso 1", ativo=False)
+    estudante_teste = Estudante(name="Fulano", curso="curso 1", ativo=False)  # Corrected field name
     result = await create_estudante(estudante_teste)
     assert estudante_teste == result
 
